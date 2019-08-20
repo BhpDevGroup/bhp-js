@@ -4,7 +4,8 @@ import { sha256 } from "../u";
 import { getPrivateKeyFromWIF, getPublicKeyUnencoded } from "./core";
 import { isPublicKey, isWIF } from "./verify";
 
-export const curve = new EC("p256");
+// export const curve = new EC("p256");
+export const curve = new EC("secp256k1");
 
 /**
  * Converts signatureHex to a signature object with r & s.
