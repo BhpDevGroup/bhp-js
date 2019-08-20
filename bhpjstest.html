@@ -11,47 +11,47 @@
 
 <script>
     console.log(Bhp);
-	// const account = new Bhp.wallet.Account("464eb4b76a5307f71ba0172be453dad0503683c9daa24aaf0be03e91932ccad9");
-	// console.log(account);
+	const account = new Bhp.wallet.Account("464eb4b76a5307f71ba0172be453dad0503683c9daa24aaf0be03e91932ccad9");
+	console.log(account);
 
 
-const sendingKey =
-  "3c8bf32f2b56d3c3abba1912a5a582c59706172dc58d66dcf7835646d74c8eb7";
-const receivingAddress = "AXUtFN4bKnejM82b5ZSH1bSBh31TzdCWLk";
-const network = "TestNet";
-const intent = Bhp.api.makeIntent({ BHP: 1 }, receivingAddress);
+// const sendingKey =
+//   "3c8bf32f2b56d3c3abba1912a5a582c59706172dc58d66dcf7835646d74c8eb7";
+// const receivingAddress = "AXUtFN4bKnejM82b5ZSH1bSBh31TzdCWLk";
+// const network = "TestNet";
+// const intent = Bhp.api.makeIntent({ BHP: 1 }, receivingAddress);
 
-console.log("\n\n--- Intents ---");
-intent.forEach(i => console.log(i));
+// console.log("\n\n--- Intents ---");
+// intent.forEach(i => console.log(i));
 
-//debugger
-const apiProvider = new Bhp.api.bhpscan.instance(network);
+// //debugger
+// const apiProvider = new Bhp.api.bhpscan.instance(network);
 
-console.log("\n\n--- API Provider ---");
-console.log(apiProvider);
+// console.log("\n\n--- API Provider ---");
+// console.log(apiProvider);
 
-const account = new Bhp.wallet.Account(sendingKey);
+// const account = new Bhp.wallet.Account(sendingKey);
 
-console.log("\n\n--- Sending Address ---");
-console.log(account);
+// console.log("\n\n--- Sending Address ---");
+// console.log(account);
 
-const config = {
-  api: apiProvider, // The network to perform the action, MainNet or TestNet.
-  account: account, // This is the address which the assets come from.
-  intents: intent // This is where you want to send assets to.
-};
+// const config = {
+//   api: apiProvider, // The network to perform the action, MainNet or TestNet.
+//   account: account, // This is the address which the assets come from.
+//   intents: intent // This is where you want to send assets to.
+// };
 
-console.log("\n\n--- config ---");
-console.log(config);
+// console.log("\n\n--- config ---");
+// console.log(config);
 
-Bhp.api.sendAsset(config)
-  .then(config => {
-    console.log("\n\n--- Response ---");
-    console.log(config.response);
-  })
-  .catch(config => {
-    console.log(config);
-  });
+// Bhp.api.sendAsset(config)
+//   .then(config => {
+//     console.log("\n\n--- Response ---");
+//     console.log(config.response);
+//   })
+//   .catch(config => {
+//     console.log(config);
+//   });
 </script>
 
 </body>
