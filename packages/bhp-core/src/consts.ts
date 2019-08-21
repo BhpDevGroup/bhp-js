@@ -23,16 +23,11 @@ export const ASSET_TYPE: { [key: string]: number } = {
   Token: 0x60 // (= CreditFlag | 0x20)
 };
 export const CONTRACTS: { [key: string]: string } = {
-  RPX: "ecc6b20d3ccac1ee9ef109af5a7cdb85706b1df9",
-  TEST_RPX: "5b7074e873973a6ed3708862f219a6fbf4d1c411",
-  TEST_LWTF: "d7678dd97c000be3f33e9362e673101bac4ca654",
-  TEST_NXT: "0b6c1f919e95fe61c17a7612aebfaf4fda3a2214",
-  TEST_RHTT4: "f9572c5b119a6b5775a6af07f1cef5d310038f55"
 };
 
 export const DEFAULT_RPC: { [key: string]: string } = {
-  MAIN: "https://localhost:20557",
-  TEST: "https://localhost:20557"
+  MAIN: "https://seed01.bhpa.io:20557",
+  TEST: "https://47.103.46.191:20557"
 };
 
 export const DEFAULT_REQ = {
