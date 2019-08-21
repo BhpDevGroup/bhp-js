@@ -11,47 +11,11 @@
 
 <script>
     console.log(Bhp);
-	const account = new Bhp.wallet.Account("464eb4b76a5307f71ba0172be453dad0503683c9daa24aaf0be03e91932ccad9");
+	const account = new Bhp.wallet.Account("910183411298293648578c14f4d34bf8ba5ff03e28a026b3eb0a744f589b05d3");
 	console.log(account);
 
-
-// const sendingKey =
-//   "3c8bf32f2b56d3c3abba1912a5a582c59706172dc58d66dcf7835646d74c8eb7";
-// const receivingAddress = "AXUtFN4bKnejM82b5ZSH1bSBh31TzdCWLk";
-// const network = "TestNet";
-// const intent = Bhp.api.makeIntent({ BHP: 1 }, receivingAddress);
-
-// console.log("\n\n--- Intents ---");
-// intent.forEach(i => console.log(i));
-
-// //debugger
-// const apiProvider = new Bhp.api.bhpscan.instance(network);
-
-// console.log("\n\n--- API Provider ---");
-// console.log(apiProvider);
-
-// const account = new Bhp.wallet.Account(sendingKey);
-
-// console.log("\n\n--- Sending Address ---");
-// console.log(account);
-
-// const config = {
-//   api: apiProvider, // The network to perform the action, MainNet or TestNet.
-//   account: account, // This is the address which the assets come from.
-//   intents: intent // This is where you want to send assets to.
-// };
-
-// console.log("\n\n--- config ---");
-// console.log(config);
-
-// Bhp.api.sendAsset(config)
-//   .then(config => {
-//     console.log("\n\n--- Response ---");
-//     console.log(config.response);
-//   })
-//   .catch(config => {
-//     console.log(config);
-//   });
+	var signature = Bhp.wallet.sign("8000000115226a71a6a3c15ffc105ed4bc113e6186c9c9e0905feae155bd403d425362a701000254a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff713204e0000000000008226c513e2aa717f2f32d3c5fb2bcb492acfc3dc54a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff7139f47de11000000008226c513e2aa717f2f32d3c5fb2bcb492acfc3dc","910183411298293648578c14f4d34bf8ba5ff03e28a026b3eb0a744f589b05d3");
+	console.log(signature);
 </script>
 
 </body>
