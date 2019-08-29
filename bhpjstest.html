@@ -17,13 +17,13 @@
 		const bhpAssetId = "13f76fabfe19f3ec7fd54d63179a156bafc44afc53a7f07a7a15f6724c0aa854";//BHP资产ID
 		const tokenAssetId = "b28927a741fdd4c65c99ef661d5ce88d2fedb8dfed95e7da690e1a213bd267f0";//token资产ID
 
-		/* 创建账户 (^v1.0.0)*/
+		/* 创建账户 (>=v1.0.0)*/
 		const prikey = "910183411298293648578c14f4d34bf8ba5ff03e28a026b3eb0a744f589b05d3";//私钥
 		const address = "AL2Eo2B1bWRSjizgRsFWoUShAYvv4NMiFq";//地址
 		var account = new Bhp.wallet.Account(prikey);
 		console.log(account);
 
-		/* 私钥签名 (^v1.0.0)*/
+		/* 私钥签名 (>=v1.0.0)*/
 		const hexStr = "8000000115226a71a6a3c15ffc105ed4bc113e6186c9c9e0905feae155bd403d425362a701000254a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff713204e0000000000008226c513e2aa717f2f32d3c5fb2bcb492acfc3dc54a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff7139f47de11000000008226c513e2aa717f2f32d3c5fb2bcb492acfc3dc";//交易hex
 		var signature = Bhp.wallet.sign(hexStr, prikey);
 		console.log(signature);
