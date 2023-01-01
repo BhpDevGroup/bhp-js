@@ -34,6 +34,6 @@
   ],
   "gitHead": "321e0babdd15122c4d6d0f871e923277daff88d8",
   "devDependencies": {
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^5.0.1"
   }
 }
